@@ -1,10 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React,{useState} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "fullpage.js/vendors/scrolloverflow";    
 import List from "./List";
 import styled from 'styled-components';
+import BtnPage from "./BtnPage";
 const Inner = styled.div`
   width: 1400px;
   margin: 0 auto;
@@ -47,7 +48,7 @@ const FullpageWrapper = ({cls, getData}) =>{
             <div className="section">
               <div className="slide">
                 <Inner>
-                    <List prop="maptype"/>
+                    <BtnPage/>
                 </Inner>
               </div>
               <div className="slide">

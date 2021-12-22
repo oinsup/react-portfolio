@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const duration = 0.5;
+const duration = 0.02;
 
 export const LiStyle = styled.li`
     padding:0 15px;
@@ -8,7 +8,7 @@ export const LiStyle = styled.li`
     font-weight:bold;
     color:#585858;
     a{
-        span{display:inline-block;transition:.1s;
+        span{display:inline-block;transition-duration:.5s;
             &:nth-of-type(1){transition-delay:${duration * 1}s}
             &:nth-of-type(2){transition-delay:${duration * 2}s}
             &:nth-of-type(3){transition-delay:${duration * 3}s}
@@ -27,7 +27,7 @@ export const LiStyle = styled.li`
 `;
 
 
-const LiStyle2 = styled(LiStyle)`
+export const LiStyle2 = styled(LiStyle)`
     color:red;
 `;
 
@@ -68,4 +68,19 @@ overflow:hidden;
 export const TitStyle = styled.strong`
     font-size:24px;
     color:#575757;
+`
+
+
+export const Button = styled.button`
+    position:relative;
+    border-radius:5px;
+    width:180px;
+    height:40px;
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
+`
+export const BtnType01 = styled(Button)`
+    background:red;
+    &:after{position:absolute;left:0;bottom:5px;display:block;content:'';width:100%;height:4px;background:#fff;}
 `

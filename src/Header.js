@@ -1,10 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { LiStyle } from './Style';
+import { LiStyle, LiStyle2 } from './Style';
 
-const LiStyle2 = styled(LiStyle)`
-    color:red;
-`;
 const Header = ({prop}) => {
     console.log(LiStyle.length)
     return (
