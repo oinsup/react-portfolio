@@ -32,3 +32,6 @@ li{list-style: none;}
 #content{width:100%;
     >.inner{width:1400px;margin:0 auto;}
 }
+.fp-controlArrow{}
+.fp-controlArrow.fp-prev{left:calc(50% - 760px);}
+.fp-controlArrow.fp-next{right:calc(50% - 760px);}

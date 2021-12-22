@@ -1,37 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { LiStyle } from './Style';
 
-const LiStyle = styled.li`
-    padding:0 15px;
-    font-size:24px;
-    font-weight:bold;
-    color:#585858;
-    a{
-        span{display:inline-block;
-            &:nth-of-type(1){transition:.2s;}
-            &:nth-of-type(2){transition:.2s .05s;}
-            &:nth-of-type(3){transition:.2s .1s;}
-            &:nth-of-type(4){transition:.2s .15s;}
-            &:nth-of-type(5){transition:.2s .2s;}
-            &:nth-of-type(6){transition:.2s .25s;}
-            &:nth-of-type(7){transition:.2s .3s;}
-            &:nth-of-type(8){transition:.2s .35s;}
-            &:nth-of-type(9){transition:.2s .4s;}
-            &:nth-of-type(10){transition:.2s .45s;}
-        }
-        &:hover{
-            span{transform:translateY(-10px);}
-        }
-    }
+const LiStyle2 = styled(LiStyle)`
+    color:red;
 `;
-
 const Header = ({prop}) => {
+    console.log(LiStyle.length)
     return (
         <header id='header' className={prop}>
             <div className='inner'>
                 <h1 className='logo'>로고</h1>
                 <ul className='menu'>
-                    <LiStyle>
+                    <LiStyle2>
                         <a href="#page01">
                             <span>P</span>
                             <span>R</span>
@@ -41,7 +22,7 @@ const Header = ({prop}) => {
                             <span>L</span>
                             <span>E</span>
                         </a>
-                    </LiStyle>
+                    </LiStyle2>
                     <LiStyle>
                         <a href="#page02">
                             <span>P</span>
