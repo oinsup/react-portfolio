@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import ReactDOM from "react-dom";
+import styled from 'styled-components';
 import ReactFullpage from "@fullpage/react-fullpage";
 import "fullpage.js/vendors/scrolloverflow";    
-import List from "./List";
-import styled from 'styled-components';
-import BtnPage from "./BtnPage";
+import List from "./components/card/List";
+import BtnPage from "./pages/BtnPage";
 const Inner = styled.div`
   width: 1400px;
   margin: 0 auto;
@@ -27,43 +27,45 @@ const FullpageWrapper = ({cls, getData}) =>{
         //using index
       render={({ state, fullpageApi }) => {
         return (
-          <div id="fullpage-wrapper">
-            <div className="section">
-                <Inner>
-                  <h3>Section 1</h3>
-                </Inner>
-            </div>
-            <div className="section">
-              <div className="slide">
-                <Inner>
-                    <List prop="maptype"/>
-                </Inner>
+          <div id="container">
+            <div id="fullpage-wrapper">
+              <div className="section">
+                  <Inner>
+                    <h3>Section 1</h3>
+                  </Inner>
               </div>
-              <div className="slide">
-                <Inner>
-                    <List prop="webtype"/>
-                </Inner>
+              <div className="section">
+                <div className="slide">
+                  <Inner>
+                      <List prop="maptype"/>
+                  </Inner>
+                </div>
+                <div className="slide">
+                  <Inner>
+                      <List prop="webtype"/>
+                  </Inner>
+                </div>
               </div>
-            </div>
-            <div className="section">
-              <div className="slide">
-                <Inner>
-                    <BtnPage/>
-                </Inner>
+              <div className="section">
+                <div className="slide">
+                  <Inner>
+                      <BtnPage/>
+                  </Inner>
+                </div>
+                <div className="slide">
+                  <Inner>
+                    <h3>Slide 2.2</h3>
+                  </Inner>
+                </div>
               </div>
-              <div className="slide">
-                <Inner>
-                  <h3>Slide 2.2</h3>
-                </Inner>
+              <div className="section">
+                  <Inner>
+                    <h3>Section 3</h3>
+                    <button onClick={() => fullpageApi.moveTo(1, 0)}>
+                      Move top
+                    </button>
+                  </Inner>
               </div>
-            </div>
-            <div className="section">
-                <Inner>
-                  <h3>Section 3</h3>
-                  <button onClick={() => fullpageApi.moveTo(1, 0)}>
-                    Move top
-                  </button>
-                </Inner>
             </div>
           </div>
         );

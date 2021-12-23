@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
-import Header from './Header'
-import FullpageWrapper from './Fullpage';
+import Header from '../components/header/Header'
+import FullpageWrapper from '../Fullpage';
 
 
 
@@ -13,9 +13,7 @@ const Container = () => {
     return (
         <>
             <Header prop={clName}/>
-            <div id="container">
-                <FullpageWrapper getData={getData}/>
-            </div>
+            <FullpageWrapper getData={getData}/>
         </>
     );
 };

@@ -1,5 +1,4 @@
-import Header from "./Header";
-import Container from "./Container";
+import Container from "./pages/Container";
 import "./common.scss";
 function App() {
   return (

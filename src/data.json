@@ -1,0 +1,18 @@
+{
+    "logo":{"name":"로고명","src":""},
+    "maptype":[
+        {"title":"스마트국토정보","src":"/images/img-smartland.jpg","link": "https://oinsup.github.io/smart-map/build/html/00_coding_list(스마트국토정보).html"},
+        {"title":"LX 지도서비스","src":"/images/img-lx-map.jpg","link": "https://oinsup.github.io/lx-map/build/html/00_coding_list.html"},
+        {"title":"임업진흥원 지도서비스","src":"/images/img-imup.jpg","link": "https://gis.forestdata.kr/#menuCont02"},
+        {"title":"국토교통부 공간정보플랫폼(KGEOP) 지도드림","src":"/images/img-imup.jpg","link": "https://oinsup.github.io/"}
+    ],
+    "webtype":[
+        {"title":"이북5도","src":"/images/img-ibuk5do.jpg","link":"https://oinsup.github.io/ibuk5do/build/html/00_coding_list.html"},
+        {"title":"LX국토정보플랫폼","src":"/images/img-lx-potal.jpg","link":"https://oinsup.github.io/lx-potal/B안(포탈)/build/html/00_coding_list.html"},
+        {"title":"전주시 데이터포털","src":"/images/img-jeonju.jpg","link":"https://oinsup.github.io/lx-potal/A안(전주시)/build/html/00_coding_list.html"},
+        {"title":"LX 통합 대시보드","src":"/images/img-lx-dashboard.jpg","link":"https://oinsup.github.io/"},
+        {"title":"국토교통부 공간정보플랫폼(KGEOP) 포털","src":"/images/img-kgeo-potal.jpg","link": "https://oinsup.github.io/"}
+        
+    ],
+    "meunList":["PROFILE","PORTFOLIO","STYLE GUIDE","CONTACT"]
+}
