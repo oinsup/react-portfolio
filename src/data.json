@@ -4,15 +4,39 @@
         {"title":"스마트국토정보","src":"/images/img-smartland.jpg","link": "https://oinsup.github.io/smart-map/build/html/00_coding_list(스마트국토정보).html"},
         {"title":"LX 지도서비스","src":"/images/img-lx-map.jpg","link": "https://oinsup.github.io/lx-map/build/html/00_coding_list.html"},
         {"title":"임업진흥원 지도서비스","src":"/images/img-imup.jpg","link": "https://gis.forestdata.kr/#menuCont02"},
-        {"title":"국토교통부 공간정보플랫폼(KGEOP) 지도드림","src":"/images/img-imup.jpg","link": "https://oinsup.github.io/"}
+        {"title":"국토교통부 K-GEO플랫폼 지도드림","src":"/images/img-jidodream.jpg","link": "https://oinsup.github.io/"}
     ],
     "webtype":[
         {"title":"이북5도","src":"/images/img-ibuk5do.jpg","link":"https://oinsup.github.io/ibuk5do/build/html/00_coding_list.html"},
         {"title":"LX국토정보플랫폼","src":"/images/img-lx-potal.jpg","link":"https://oinsup.github.io/lx-potal/B안(포탈)/build/html/00_coding_list.html"},
         {"title":"전주시 데이터포털","src":"/images/img-jeonju.jpg","link":"https://oinsup.github.io/lx-potal/A안(전주시)/build/html/00_coding_list.html"},
-        {"title":"LX 통합 대시보드","src":"/images/img-lx-dashboard.jpg","link":"https://oinsup.github.io/"},
-        {"title":"국토교통부 공간정보플랫폼(KGEOP) 포털","src":"/images/img-kgeo-potal.jpg","link": "https://oinsup.github.io/"}
+        {"title":"LX 통합 대시보드","src":"/images/img-lx-dashboard.jpg","link":"https://oinsup.github.io/lx-dashboard/build/html/00_coding_list.html"},
+        {"title":"국토교통부 K-GEO플랫폼 포털","src":"/images/img-kgeo-potal.jpg","link": "https://oinsup.github.io/kgeop-potal/build/html/00_coding_list.html"}
         
     ],
-    "meunList":["PROFILE","PORTFOLIO","STYLE GUIDE","CONTACT"]
+    "meunList":["PROFILE","PORTFOLIO","STYLE GUIDE","CONTACT"],
+    "introduce":{
+        "name":"오인섭",
+        "age":33,
+        "career":[
+            {
+                "company":"(주)M&Service",
+                "do":"PC및 장비 유지보수, 사무업무",
+                "rank":"사원",
+                "term":"2012.10 ~ 2016.02(3년 4개월)"
+            },
+            {
+                "company":"(주)대웅에듀미디어",
+                "do":"E-Book 퍼블리싱 및 유지보수",
+                "rank":"사원",
+                "term":"2017.11 ~ 2019.05(1년 6개월)"
+            },
+            {
+                "company":"(주)이프커뮤니티",
+                "do":"웹 퍼블리싱",
+                "rank":"대리",
+                "term":"2020.8 ~ 현재"
+            }
+        ]
+    }
 }
