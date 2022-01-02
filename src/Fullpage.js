@@ -6,6 +6,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import "fullpage.js/vendors/scrolloverflow";
 import List from "./components/card/List";
 import BtnPage from "./pages/BtnPage";
+import TablePage from "./pages/TablePage";
 const Inner = styled.div`
     width: 1400px;
     margin: 0 auto;
@@ -53,7 +54,7 @@ const FullpageWrapper = ({ cls, getData }) => {
                                 </div>
                                 <div className="slide">
                                     <Inner>
-                                        <h3>Slide 2.2</h3>
+                                        <TablePage />
                                     </Inner>
                                 </div>
                             </div>
