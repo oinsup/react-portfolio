@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "./pages/Container";
 import "./common.scss";
 function App() {

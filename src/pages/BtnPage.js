@@ -1,13 +1,20 @@
-import React from 'react';
-import { Button, BtnType01 } from '../styles/Button';
-
-
+import React from "react";
+import { BtnArea, BtnType01, BtnType02 } from "../styles/Button";
 
 const BtnPage = () => {
     return (
-        <div>
-            <BtnType01>버튼</BtnType01>
-        </div>
+        <BtnArea>
+            <BtnType01>
+                <span>버튼</span>
+            </BtnType01>
+            <BtnType02>
+                <span className="line"></span>
+                <span className="line"></span>
+                <span className="line"></span>
+                <span className="line"></span>
+                <span>버튼</span>
+            </BtnType02>
+        </BtnArea>
     );
 };
 
