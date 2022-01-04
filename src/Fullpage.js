@@ -1,9 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
-import ReactDOM from "react-dom";
 import styled from "styled-components";
 import ReactFullpage from "@fullpage/react-fullpage";
-import "fullpage.js/vendors/scrolloverflow";
 import List from "./components/card/List";
 import BtnPage from "./pages/BtnPage";
 import TablePage from "./pages/TablePage";
@@ -12,7 +10,7 @@ const Inner = styled.div`
     margin: 0 auto;
 `;
 const anchors = ["page01", "page02", "page03", "page04"];
-const FullpageWrapper = ({ cls, getData }) => {
+const FullpageWrapper = ({ cls }) => {
     return (
         <ReactFullpage
             anchors={anchors}
@@ -22,7 +20,6 @@ const FullpageWrapper = ({ cls, getData }) => {
             sectionsColor={["#ccc", "#ccc", "#ccc", "#ccc"]}
             afterLoad={(destination) => {
                 cls = "sec" + destination.index;
-                getData(cls);
             }}
             //using index
             render={({ state, fullpageApi }) => {
@@ -72,6 +69,5 @@ const FullpageWrapper = ({ cls, getData }) => {
     );
 };
 
-ReactDOM.render(<FullpageWrapper />, document.getElementById("root"));
 
 export default FullpageWrapper;

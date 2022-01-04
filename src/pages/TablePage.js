@@ -1,7 +1,8 @@
-import React,{useState} from "react";
+import React, {useState} from "react";
 import { BtnType06 } from "../styles/Button";
 import styled from "styled-components";
 import { Table } from "../styles/Table";
+import {useDispatch, useSelector} from "react-redux";
 
 const TableGroup = styled.div`
     width: 100%;
@@ -19,7 +20,9 @@ const BtnGroup = styled.div`
         &:nth-of-type(5n){margin-right:0;}
     }
 `
-const TablePage = (props) => {
+const TablePage = () => {
+    const fun = useSelector((state)=>state);
+    const dispatch = useDispatch();
     const arr = [1,2,3,4,5,6];
     const [classes,setClasses] = useState();
     const onClick = (j) =>{
@@ -28,9 +31,9 @@ const TablePage = (props) => {
     return (
         <TableGroup>
             <BtnGroup>
-                {arr.map(i=>{
+                {arr.map((i,index)=>{
                     return(
-                        <BtnType06 onClick={() => {onClick(i)}}><span>{i}번 타입</span></BtnType06>
+                        <BtnType06 key={index} onClick={() => {onClick(i)}}><span>{i}번 타입</span></BtnType06>
                     )
                 })}
             </BtnGroup>
@@ -39,8 +42,8 @@ const TablePage = (props) => {
                     <caption>테이블캡션</caption>
                     <thead>
                         <tr>
-                            <th scope="col">text</th>
-                            <th scope="col">text</th>
+                            <th scope="col">{fun.name}</th>
+                            <th scope="col">{fun.age}</th>
                             <th scope="col">text</th>
                             <th scope="col">text</th>
                             <th scope="col">text</th>
@@ -49,7 +52,9 @@ const TablePage = (props) => {
                     <tbody>
                         <tr>
                             <th scope="row">text</th>
-                            <td>text</td>
+                            <td>
+                                <button onClick={()=>dispatch({type:"INCREASE"})}>눌러</button>
+                            </td>
                             <td>text</td>
                             <td>text</td>
                             <td>text</td>
